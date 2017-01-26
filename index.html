@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="./app.js"></script>
+        <script src="./app.css" type="text/css"></script>
+
+    </head>
+        <body ng-app="myApp">
+        <header>
+        <div class="jumbotron text-center">
+            Hello People... Welcome to Keerthi's Blog
+            <img class="img-circle" src="./simley.jpg" alt="smiley face" style="height: 25px; width: 35px;"/>
+            <ul style="list-style-type: none">
+            <li><a ui-sref="index2">MyProjects</a></li>
+            <li><a ui-sref="index3">MyPlaces</a></li>
+            </ul>
+        </div>
+        </header>
+
+        <section>
+        <ui-view></ui-view>
+        </section>
+        </body>
+</html>
